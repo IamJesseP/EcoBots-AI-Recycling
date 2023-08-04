@@ -15,8 +15,8 @@ export default function Nav() {
         <li>FAQ</li>
       </ul>
       <div className="navbar-section-2">
-        <button>Log In</button>
-        <button>Recycle</button>
+        <button className="hover">Log In</button>
+        <button className="hover">Recycle</button>
       </div>
     </nav>
   );

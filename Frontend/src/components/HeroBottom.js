@@ -9,11 +9,11 @@ export default function HeroBottom() {
   return (
     <div id="hero-bottom">
       <div className="hero-card-container">
-        <img src={CardBoardCard} className="hide-on-mobile"></img>
+        <img src={CardBoardCard} className="hide-on-mobile hover"></img>
         {/* TO DO: Fix pixelated svg green pitch card */}
-        <img src={GreenPitchCard}></img>
-        <img src={RecycleBinCard} className="hide-on-mobile"></img>
-        <img src={BottlesCard}></img>
+        <img src={GreenPitchCard} className="hover"></img>
+        <img src={RecycleBinCard} className="hide-on-mobile hover"></img>
+        <img src={BottlesCard} className="hover"></img>
       </div>
     </div>
   );

@@ -9,22 +9,22 @@ export default function Instructional() {
       <div className="title">How It Works</div>
       <div className="instructional-cards">
         <div className="card">
-          <img src={Instruct1}></img>
+          <img src={Instruct1} className="hover"></img>
           <button>1</button>
           <p>Snap a picture of your recyclable</p>
         </div>
         <div className="card">
-          <img src={Instruct2}></img>
+          <img src={Instruct2} className="hover"></img>
           <button>2</button>
           <p>EcoBot begins identifying your recyclable</p>
         </div>
         <div className="card">
-          <img src={Instruct3}></img>
+          <img src={Instruct3} className="hover"></img>
           <button>3</button>
           <p>See your impact and ask EcoBot questions!</p>
         </div>
       </div>
-      <button className="recycle-button">Recycle Now</button>
+      <button className="recycle-button hover">Recycle Now</button>
     </div>
   );
 }

@@ -9,10 +9,10 @@ export default function HeroBottom() {
   return (
     <div id="hero-bottom">
       <div className="hero-card-container">
-        <img src={CardBoardCard}></img>
-        <img src={RecycleBinCard}></img>
+        <img src={CardBoardCard} className="hide-on-mobile"></img>
         {/* TO DO: Fix pixelated svg green pitch card */}
         <img src={GreenPitchCard}></img>
+        <img src={RecycleBinCard} className="hide-on-mobile"></img>
         <img src={BottlesCard}></img>
       </div>
     </div>

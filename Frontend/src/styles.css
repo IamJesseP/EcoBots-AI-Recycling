@@ -54,7 +54,6 @@
 }
 
 .hero-quote{
-    
     max-width:550px;
     font-family: 'Andada Pro', serif;
     font-size: 2.5rem;
@@ -69,7 +68,6 @@
     font-size: 2.5rem;
     border: #49A078 1 solid;
     border-radius: 20px;
-
     height: 40px;
     width: 180px;
     border: none;
@@ -104,9 +102,78 @@
 
 /* ----------Instructional----------- */
 #instructional{
-    background-color: cadetblue;
+    max-width:1440px;
+    margin: auto;
+    align-items: center;
     height: 800px;
-    margin-bottom: 200px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Epilogue', serif;
+    font-size: 2.5rem;
+    align-self: start;
+    color: #171a1f;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.instructional-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    gap: 16px;
+    align-items: center;
+}
+
+.card > img {
+    height: 290px;
+    width: 290px;
+}
+
+.card > button {
+    font-size: 1rem;
+    border: #49A078 1 solid;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: #49A078;
+    color: #171a1f;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Inter', sans-serif;
+    align-self: start;
+    margin-left: -16px;
+}
+.card > p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Andada Pro', sans-serif;
+    max-width: 225px;
+    line-height: 1.5;
+}
+
+.recycle-button{
+    font-size: 1rem;
+    border: #49A078 1 solid;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: #49A078;
+    color: #faf7f4
 }
 /* ----------Footer---------- */
 #footer{
@@ -116,13 +183,20 @@
 
 
 /* ----------Tablet Devices----------- */
-@media (max-width: 1305px) {
+@media (max-width: 1304px) {
+    #hero-top{
+        height: 150px;
+        max-width:1440px;
+        margin: auto;
+        padding: 25px;
+    }
+
     #hero-bottom{
         max-width:1440px;
         margin: auto;
         justify-content: center;
         align-items: center;
-        height: 900px;
+        height: 950px;
         margin-bottom: 150px;
         display: flex;
     }
@@ -132,16 +206,36 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-     
       gap: 8px;
       max-width: 900px;
-      max-height:950px;
-      overflow-y: scroll;
+      /* max-height:950px;
+      overflow-y: scroll; */
     }
   }
+
+  @media only screen and (max-width: 1069px){
+    #instructional{
+        height: 1340px; 
+    }
+    #hero-bottom{
+        max-width:1440px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: 950px;
+        margin-bottom: 150px;
+        display: flex;
+    }
+ 
+  }
+
+
+
 /* ----------Mobile Devices----------- */
 @media only screen and (max-width: 768px) {
-
+.hide-on-mobile {
+    display: none;
+}
 /* ----------Nav----------- */
 .logo > img{
     height: 55px;
@@ -175,8 +269,27 @@
 }
 
 /* ----------HeroTop----------- */
-
+#hero-top{
+    height: 350px;
+    max-width:1440px;
+    margin: auto;
+    padding: 25px;
+}
+.hero-quote{
+    margin-bottom: 60px;
+}
 /* ----------HeroBottom----------- */
+#hero-bottom{
+    height:450px;
+    margin-bottom: 400px;
+    
+}
+
+.hero-card-container{
+    margin-top: 80px;
+    flex-direction: column;
+}
+
 .hero-card-container > div > img{
     border-radius: 10px;
     width: 48%;
@@ -186,7 +299,10 @@
 }
 
 /* ----------Instructional----------- */
+#instructional{
+    height: 1820px; 
+   
+}
 
 /* ----------Footer---------- */
-
 }

@@ -2,13 +2,47 @@
     margin: 0;
     padding: 0;
     background-color:#faf7f4; 
+    font-family: 'Inter', sans-serif;
 }
 
 /* ----------Nav----------- */
 #nav{
-    background-color: aqua;
     height: 100px;
+    max-width:1440px;
+    margin: auto;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   
+}
+.navbar-section, .navbar-section-2 {
+    display: flex;
+    color: #494545;
+    gap: 20px;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.navbar-section-2 > button:first-child{
+    font-size: 1rem;
+    border: thin #49A078 solid;
+    border-radius: 25px;
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    color: #49A078;
+}
+.navbar-section-2 > button:last-child{
+    font-size: 1rem;
+    border: #49A078 1 solid;
+    border-radius: 25px;
+    height: 40px;
+    width: 125px;
+    border: none;
+    background-color: #49A078;
+    color: #faf7f4
 }
 
 
@@ -44,6 +78,36 @@
 @media only screen and (max-width: 768px) {
 
 /* ----------Nav----------- */
+.logo > img{
+    height: 55px;
+}
+.navbar-section, .navbar-section-2 {
+    gap: 5px;
+    font-size: 0.75rem;
+}
+.navbar-section-2{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.navbar-section-2 > button:first-child{
+    font-size: 0.8rem;
+    
+    border-radius: 25px;
+    width: 70px;
+    height: 40px;
+    background-color: transparent;
+    color: #49A078;
+}
+.navbar-section-2 > button:last-child{
+    font-size: 0.8rem;
+    border: #49A078 1 solid;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: #49A078;
+    color: #faf7f4
+}
 
 /* ----------HeroTop----------- */
 

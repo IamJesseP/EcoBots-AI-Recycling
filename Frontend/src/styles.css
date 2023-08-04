@@ -140,6 +140,7 @@
 .card > img {
     height: 290px;
     width: 290px;
+    border-radius: 25px;
 }
 
 .card > button {

@@ -41,7 +41,7 @@
     width: 125px;
     border: none;
     background-color: #49A078;
-    color: #faf7f4
+    color: #171a1f;
 }
 
 
@@ -174,11 +174,50 @@
     width: 150px;
     border: none;
     background-color: #49A078;
-    color: #faf7f4
+    color: #171a1f;
 }
+
 /* ----------Footer---------- */
 #footer{
-    height: 300px;
+
+    height: 220px;
+    width: 100%;
+    background-color: #171a1f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 1440px;
+    padding: 25px;
+    padding: 40px;
+    background-color: #171a1f;
+    display: flex;
+}
+
+.footer-section > img{
+    background-color: transparent;
+    align-self: start;
+    justify-self: flex-start;
+}
+.footer-section > ul{
+    background-color: #171a1f;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 80px;
+    
+}
+.footer-section > ul > li{
+    background-color: #171a1f;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 

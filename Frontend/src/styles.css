@@ -10,7 +10,6 @@
     height: 100px;
     max-width:1440px;
     margin: auto;
-    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +18,7 @@
 }
 .navbar-section, .navbar-section-2 {
     display: flex;
-    color: #494545;
+    color: #171a1f;
     gap: 20px;
     list-style: none;
     font-size: 0.9rem;
@@ -48,9 +47,36 @@
 
 /* ----------HeroTop----------- */
 #hero-top{
-    background-color: aliceblue;
-    height: 300px;
+    height: 150px;
+    max-width:1440px;
+    margin: auto;
+    padding: 25px;
 }
+
+.hero-quote{
+    
+    max-width:550px;
+    font-family: 'Andada Pro', serif;
+    font-size: 2.5rem;
+    color: #171a1f;
+}
+.hero-button{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Andada Pro', serif;
+    font-size: 2.5rem;
+    border: #49A078 1 solid;
+    border-radius: 20px;
+
+    height: 40px;
+    width: 180px;
+    border: none;
+    background-color: #49A078;
+    color: #171a1f;
+}
+
 /* ----------HeroBottom----------- */
 #hero-bottom{
     background-color: blueviolet;

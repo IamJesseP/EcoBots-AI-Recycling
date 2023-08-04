@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:#faf7f4; 
+}
+
+/* ----------Nav----------- */
+#nav{
+    background-color: aqua;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+
+/* ----------HeroTop----------- */
+#hero-top{
+    background-color: aliceblue;
+    height: 300px;
+}
+/* ----------HeroBottom----------- */
+#hero-bottom{
+    background-color: blueviolet;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 150px;
+}
+/* ----------Instructional----------- */
+#instructional{
+    background-color: cadetblue;
+    height: 800px;
+    margin-bottom: 200px;
+}
+/* ----------Footer---------- */
+#footer{
+    height: 300px;
+}
+
+
+
+
+
+
+/* ----------Mobile Devices----------- */
+@media only screen and (max-width: 768px) {
+
+/* ----------Nav----------- */
+
+/* ----------HeroTop----------- */
+
+/* ----------HeroBottom----------- */
+
+/* ----------Instructional----------- */
+
+/* ----------Footer---------- */
+
+}

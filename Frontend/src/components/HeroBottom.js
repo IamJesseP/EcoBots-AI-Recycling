@@ -1,5 +1,6 @@
 import React from 'react';
+import '../styles.css';
 
 export default function HeroBottom() {
-  return <div>HeroBottom</div>;
+  return <div id="hero-bottom">HeroBottom</div>;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Nav() {
-  return <div>Nav</div>;
+  return <nav id="nav">Nav</nav>;
 }

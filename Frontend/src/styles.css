@@ -79,11 +79,29 @@
 
 /* ----------HeroBottom----------- */
 #hero-bottom{
-    background-color: blueviolet;
+    max-width:1440px;
+    margin: auto;
     align-items: center;
-    height: 400px;
-    margin-bottom: 150px;
+    height: 800px;
 }
+.hero-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-height:950px;
+    overflow-y: scroll;
+
+}
+.hero-card-container > div > img{
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+    gap: 8px;
+}
+
 /* ----------Instructional----------- */
 #instructional{
     background-color: cadetblue;
@@ -97,9 +115,30 @@
 
 
 
-
-
-
+/* ----------Tablet Devices----------- */
+@media (max-width: 1305px) {
+    #hero-bottom{
+        max-width:1440px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        margin-bottom: 150px;
+        display: flex;
+    }
+    .hero-card-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+     
+      gap: 8px;
+      max-width: 900px;
+      max-height:950px;
+      overflow-y: scroll;
+    }
+  }
 /* ----------Mobile Devices----------- */
 @media only screen and (max-width: 768px) {
 
@@ -138,6 +177,13 @@
 /* ----------HeroTop----------- */
 
 /* ----------HeroBottom----------- */
+.hero-card-container > div > img{
+    border-radius: 10px;
+    width: 48%;
+    min-width: 330px;
+    height: 450px;
+    gap: 8px
+}
 
 /* ----------Instructional----------- */
 

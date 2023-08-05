@@ -7,9 +7,16 @@ export default function Nav() {
   return (
     <nav id="nav">
       <div className="navbar-section">
-        <a href="/" className="logo">
+        <LinkScroll
+          className="logo"
+          to="nav"
+          spy={true}
+          duration={1200}
+          smooth={true}
+          offset={0}
+          style={{ cursor: 'pointer' }}>
           <img src={EcoBotsLogo}></img>
-        </a>
+        </LinkScroll>
       </div>
       <ul className="navbar-section">
         <li>

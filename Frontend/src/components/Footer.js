@@ -7,6 +7,7 @@ export default function Footer() {
         <img src={EcoBotsLogoWhite}></img>
         <ul>
           <li>About us</li>
+          <li>Recycle now</li>
           <li>FAQs</li>
           <li>Academy</li>
         </ul>

@@ -190,6 +190,71 @@
     color: #171a1f;
 }
 
+/* ----------About---------- */
+#about{
+    max-width:1440px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height:1000px;
+    margin-bottom: 100px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-section{
+    width: 90%;
+    background-color:#f0e7de;
+    height: 800px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:32px;
+}
+
+.about-section-text > h1{
+    font-size: 3rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bolder;
+    color:#171a1f;
+    padding: 64px 25px 25px 0px;
+    
+}
+.about-section-text{
+    align-self: center;
+    margin: 0px 10px;
+}
+.about-section-text > ul > hr {
+    width: 25%;
+    background-color: #f0e7de;
+}
+.about-section-text > ul > li{
+    padding: 25px 25px 25px 0px;
+    font-size: 1.5rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: bold;
+}
+.about-section > div {
+    background-color: #f0e7de;
+}
+
+
+.about-section > div > ul > li{
+    background-color: #f0e7de;
+    list-style: none;
+}
+.about-img{
+    padding-left: 25px;
+    width: 380px;
+    background-color: #f0e7de;
+    align-self: center;
+  
+}
+
 /* ----------Footer---------- */
 #footer{
 
@@ -264,6 +329,18 @@
       /* max-height:950px;
       overflow-y: scroll; */
     }
+
+    #about{
+        height:1000px;
+        margin-bottom: 100px;
+    }
+    .about-section{
+        height: 800px;
+    }
+    .about-img{
+        padding: 0px;
+        width: 320px;  
+    }
   }
 
   @media only screen and (max-width: 1069px){
@@ -279,7 +356,16 @@
         margin-bottom: 150px;
         display: flex;
     }
- 
+    #about{
+        height:1000px;
+        margin-bottom: 100px;
+    }
+    .about-section{
+        height: 800px;
+    }
+    .about-img{
+        width: 300px;        
+    }
   }
 
 
@@ -294,7 +380,7 @@
     height: 55px;
 }
 .navbar-section, .navbar-section-2 {
-    gap: 5px;
+    gap: 8px;
     font-size: 0.75rem;
 }
 .navbar-section-2{
@@ -356,6 +442,12 @@
     height: 1820px; 
    
 }
-
+#about{
+    height:1000px;
+    margin-bottom: 100px;
+}
+.about-section{
+    height: 1200px;
+}
 /* ----------Footer---------- */
 }

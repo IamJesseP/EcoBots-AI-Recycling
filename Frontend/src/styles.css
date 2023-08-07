@@ -21,7 +21,7 @@
 /* ----------Nav----------- */
 #nav{
     height: 100px;
-    max-width:100%;
+    max-width:1440px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -322,7 +322,7 @@
     justify-content: center;
     width: 100%;
     max-width: 1440px;
-    height: 2000px;
+    height: 1400px;
     background-color: #faf7f4;
     margin: auto;
 }

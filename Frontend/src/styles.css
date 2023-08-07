@@ -310,6 +310,81 @@
 
 
 
+/* ----------Recycle Page----------- */
+#recycle{
+    margin: auto;
+}
+
+.recycle-page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: #faf7f4;
+    margin: auto;
+}
+
+.input-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    position: relative;
+}
+
+.file-upload{
+    width: 340px;
+    height: 50px;
+    padding: 20px 80px;
+    border-radius: 40px;
+    background: #5b5e5b93;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the upload button */
+    z-index: 2;
+    font-family: 'Epilogue';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #171a1f;
+}
+
+.file-upload-icon{
+    background: transparent;
+    margin-top: 8px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+.input-page > h2 {
+    margin: 15px;
+    font-family: 'Andada Pro', sans-serif;
+    font-weight: 200;
+    color: #222427b0;
+}
+
+.input-page > h1 {
+    font-weight: 500;
+    font-family: 'Andada Pro', sans-serif;
+    margin: 20px;
+    margin-bottom: 700px;
+    text-align: center;
+
+}
+
+.spline{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center the Spline asset */
+    z-index: 1;
+    
+
+}
 /* ----------Tablet Devices----------- */
 @media (max-width: 1304px) {
     #hero-top{

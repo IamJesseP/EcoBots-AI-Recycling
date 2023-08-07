@@ -10,25 +10,33 @@
     transition: transform 0.3s ease;
   }
   
-  .hover:hover {
+.hover:hover {
     transform: scale(1.045);
   }
-  
-
 
 
 
 /* ----------Nav----------- */
 #nav{
     height: 100px;
-    max-width:1440px;
+    max-width:100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-   
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+   border-radius: 0px 0px 30px 30px;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+#nav.scrolled {
+    /* ... styles for when navbar has scrolled ... */
+    background-color:#faf7f4;  /* Example: make the background slightly transparent black */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Example: add a shadow for depth */
+  }
 .navbar-section, .navbar-section-2 {
     display: flex;
     color: #171a1f;

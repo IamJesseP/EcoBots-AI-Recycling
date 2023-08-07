@@ -35,8 +35,10 @@ export default function Input() {
 
   return (
     <div className="input-page">
-      <h2>Make Every Recycle Count</h2>
-      <h1>A new way to understand your impact</h1>
+      <div className="input-title">
+        <h2>Make Every Recycle Count</h2>
+        <h1>A new way to understand your impact</h1>
+      </div>
       <div className="spline">
         <Spline scene="https://prod.spline.design/QgyFsAcjnjNZv-zO/scene.splinecode" />
       </div>

@@ -36,8 +36,8 @@
 
 #nav.scrolled {
     /* ... styles for when navbar has scrolled ... */
-    background-color:#faf7f4;  /* Example: make the background slightly transparent black */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Example: add a shadow for depth */
+    background-color:#faf7f4;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
   }
 .navbar-section, .navbar-section-2 {
     display: flex;
@@ -197,7 +197,7 @@
     width: 150px;
     border: none;
     background-color: #49A078;
-    color: #171a1f;
+    color: white;
 }
 
 /* ----------About---------- */
@@ -318,37 +318,41 @@
 .recycle-page{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
+    max-width: 1440px;
+    height: 2000px;
     background-color: #faf7f4;
     margin: auto;
 }
-
 .input-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    width: 45%;
+    max-width: 45%;
     position: relative;
 }
 
 .file-upload{
-    width: 340px;
+    width: 80%;
     height: 50px;
+    max-width: 320px;
+
     padding: 20px 80px;
     border-radius: 40px;
     background: #5b5e5b93;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* Center the upload button */
+    transform: translate(-50%, -50%); 
     z-index: 2;
     font-family: 'Epilogue';
     font-size: 1.5rem;
     text-align: center;
-    color: #171a1f;
+    color: #fffffff3;
 }
 
 .file-upload-icon{
@@ -358,33 +362,127 @@
     margin-right: 2px;
 }
 
-.input-page > h2 {
-    margin: 15px;
+
+
+.input-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-page > div > h2 {
+    margin: 5px;
     font-family: 'Andada Pro', sans-serif;
     font-weight: 200;
     color: #222427b0;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-.input-page > h1 {
+.input-page > div > h1 {
     font-weight: 500;
     font-family: 'Andada Pro', sans-serif;
-    margin: 20px;
-    margin-bottom: 700px;
+    margin: 5px 20px 20px 20px;
+    margin-bottom: 600px;
     text-align: center;
-
+    font-size: 2rem;
+   
 }
 
 .spline{
-    width: 100%;
-    height: 500px;
+    width: 90%;
+    min-width: 400px;
+    height: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* Center the Spline asset */
+    transform: translate(-50%, -50%);  
     z-index: 1;
-    
+    max-height: 480px;
 
 }
+
+.output-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    max-width: 45%;
+    min-width: 400px;
+    min-height: 400px;
+    height: 80vh;
+    position: relative;
+    background-color: #e7e5e3;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #e7e5e3;
+    max-width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+  }
+  
+  .input-area {
+    padding: 10px;
+    display: flex;
+    background-color: #e7e5e3;
+  }
+  
+  .input-area input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .message-content.bot{
+    background-color: #49A078;
+    color: white;
+  }
+  .message-content.user{
+    background-color: #414643;
+    color: white;
+  }
+  .input-area button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #49A078;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  
+  .message.user {
+    background-color: #414643;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message.bot {
+    background-color: #49A078;
+    flex: auto;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+  }
+  
+
 /* ----------Tablet Devices----------- */
 @media (max-width: 1304px) {
     #hero-top{
@@ -426,6 +524,27 @@
         padding: 0px;
         width: 320px;  
     }
+
+ 
+.recycle-page{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 2000px;
+    background-color: #faf7f4;
+    margin: auto;
+}
+.input-page > div > h2 {
+    font-size: 1rem;
+}
+
+.input-page > div > h1 {
+    font-size: 1.5rem;
+}
+
   }
 
   @media only screen and (max-width: 1069px){
@@ -451,6 +570,27 @@
     .about-img{
         width: 300px;        
     }
+
+
+    .recycle-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+        height: 2000px;
+        background-color: #faf7f4;
+        margin: auto;
+    }
+    .input-page > div > h2 {
+        font-size: 1rem;
+    }
+    
+    .input-page > div > h1 {
+        font-size: 1.5rem;
+    }
+    
   }
 
 
@@ -535,4 +675,25 @@
     height: 1200px;
 }
 /* ----------Footer---------- */
+
+
+.recycle-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 2000px;
+    background-color: #faf7f4;
+    margin: auto;
+}
+.input-page > div > h2 {
+    font-size: 1rem;
+}
+
+.input-page > div > h1 {
+    font-size: 1.5rem;
+}
+
 }

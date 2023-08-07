@@ -1,27 +1,44 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import Message from './Message.js';
 
-export default function ChatBox() {
-  const [messages, setMessages] = useState([]);
+export default function Output({ messages, setMessages }) {
+  // Destructure props
   const [inputValue, setInputValue] = useState('');
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setMessages([...messages, { sender: 'user', content: inputValue }]);
-    setInputValue('');
 
-    // For demonstration purposes, let's assume the bot responds immediately
-    setTimeout(() => {
-      setMessages([
-        ...messages,
-        { sender: 'user', content: inputValue },
-        { sender: 'bot', content: 'Bot response here' }
-      ]);
-    }, 1000);
+    // First, update the state with the user's message
+    setMessages((prevMessages) => [...prevMessages, { sender: 'user', content: inputValue }]);
+
+    // Send the user's message to the backend
+    try {
+      const response = await fetch('https://yourapi.com/respond', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ message: inputValue })
+      });
+
+      const data = await response.json();
+
+      // Assuming the backend responds with an object like { message: 'Bot response here' }
+      const botResponse = data.message;
+
+      // Update the state with the bot's response
+      setMessages((prevMessages) => [...prevMessages, { sender: 'bot', content: botResponse }]);
+    } catch (error) {
+      console.error('There was an error sending the message to the backend.', error);
+    }
+
+    // Clear the input
+    setInputValue('');
   };
 
   return (

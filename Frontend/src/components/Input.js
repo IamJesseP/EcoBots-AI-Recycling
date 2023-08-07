@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import Spline from '@splinetool/react-spline';
 import { BsUpload } from 'react-icons/bs';
 
-export default function Input() {
+export default function Input({ setMessages }) {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -27,7 +28,13 @@ export default function Input() {
       });
 
       const data = await response.json();
-      console.log(data);
+
+      // Assuming the backend responds with an object that has a message property
+      // like { message: 'Bot's response after processing the image' }
+      const botResponse = data.message;
+
+      // Use the passed setMessages function to update the state in the parent component
+      setMessages((prevMessages) => [...prevMessages, { sender: 'bot', content: botResponse }]);
     } catch (error) {
       console.error('There was an error uploading the file.', error);
     }

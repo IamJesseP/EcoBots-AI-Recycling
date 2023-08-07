@@ -435,7 +435,7 @@
     max-width: 90%;
     overflow-y: auto;
     overflow-x: hidden;
-    
+    width: 90%;
   }
   
   .input-area {

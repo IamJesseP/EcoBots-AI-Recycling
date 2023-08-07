@@ -14,7 +14,9 @@
     transform: scale(1.045);
   }
 
-
+.pointer{
+    cursor: pointer;
+}
 
 /* ----------Nav----------- */
 #nav{
@@ -45,7 +47,7 @@
     font-size: 0.9rem;
 }
 
-.navbar-section-2 > button:first-child{
+/* .recycle-button{
     font-size: 1rem;
     border: thin #49A078 solid;
     border-radius: 25px;
@@ -53,7 +55,7 @@
     height: 40px;
     background-color: transparent;
     color: #49A078;
-}
+} */
 .navbar-section-2 > button:last-child{
     font-size: 1rem;
     border: #49A078 1 solid;

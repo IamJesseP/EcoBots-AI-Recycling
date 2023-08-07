@@ -61,8 +61,10 @@ export default function Nav() {
           <li>FAQ</li>
         </ul>
         <div className="navbar-section-2">
-          <button className="hover">Log In</button>
-          <button className="hover">Recycle</button>
+          {/* <button className="hover">Log In</button> */}
+          <LinkRouter to="/recycle">
+            <button className="recycle-button hover pointer">Recycle</button>
+          </LinkRouter>
         </div>
       </nav>
     </>

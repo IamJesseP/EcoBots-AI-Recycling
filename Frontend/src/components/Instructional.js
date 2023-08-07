@@ -2,6 +2,7 @@ import React from 'react';
 import Instruct1 from '../assets/Instruct1.png';
 import Instruct2 from '../assets/Instruct2.png';
 import Instruct3 from '../assets/Instruct3.png';
+import { Link as LinkRouter } from 'react-router-dom';
 
 export default function Instructional() {
   return (
@@ -24,7 +25,9 @@ export default function Instructional() {
           <p>See your impact and ask EcoBot questions!</p>
         </div>
       </div>
-      <button className="recycle-button hover">Recycle Now</button>
+      <LinkRouter to="/recycle">
+        <button className="recycle-button hover pointer">Recycle Now</button>
+      </LinkRouter>
     </div>
   );
 }

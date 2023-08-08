@@ -1,11 +1,18 @@
-const express = require('express');
+import express from 'express';
+import cors from 'cors';
+// Routers
+import recycleRouter from './routes/recycleRoutes.js';
 
 const app = express();
-
 app.use(express.json());
 
-// Routers
-const recycleRouter = require('./routes/recycleRoutes');
+app.use(
+  cors({
+    origin: '*', // allow any origin
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: ['Content-Type', 'Authorization']
+  })
+);
 
 // Endpoints
 app.use('/recycle', recycleRouter);

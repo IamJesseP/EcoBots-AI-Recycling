@@ -22,8 +22,8 @@ export default function Input({ setMessages }) {
     const formData = new FormData();
     formData.append('photo', file);
     try {
-      const response = await fetch('YOUR_BACKEND_ENDPOINT', {
-        method: 'GET',
+      const response = await fetch('http://localhost:4000/recycle', {
+        method: 'POST',
         body: formData
       });
 

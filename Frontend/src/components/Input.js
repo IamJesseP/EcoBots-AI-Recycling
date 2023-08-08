@@ -23,7 +23,7 @@ export default function Input({ setMessages }) {
     formData.append('photo', file);
     try {
       const response = await fetch('YOUR_BACKEND_ENDPOINT', {
-        method: 'POST',
+        method: 'GET',
         body: formData
       });
 

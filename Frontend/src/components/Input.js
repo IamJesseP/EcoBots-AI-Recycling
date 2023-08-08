@@ -28,10 +28,10 @@ export default function Input({ setMessages }) {
       });
 
       const data = await response.json();
-
+      console.log(data.result);
       // Assuming the backend responds with an object that has a message property
       // like { message: 'Bot's response after processing the image' }
-      const botResponse = data.message;
+      const botResponse = data.result.response;
 
       // Use the passed setMessages function to update the state in the parent component
       setMessages((prevMessages) => [...prevMessages, { sender: 'bot', content: botResponse }]);

@@ -1,5 +1,6 @@
 const recyclingInfo = {
   plastic: {
+    response: 'This is a recyclable plastic!',
     carbonFootprint: 'Approximately 6 kg CO2 per kg of plastic',
     facts: [
       'Plastic takes up to 1,000 years to decompose in landfills.',
@@ -13,6 +14,7 @@ const recyclingInfo = {
       'Recycling 500 grams of plastic saves around 12,000 BTUs of energy (equivalent to about 0.0112 gallons or 0.0425 liters of crude oil).'
   },
   paper: {
+    response: 'This is  recyclable paper!',
     carbonFootprint: 'Approximately 1.7 kg CO2 per kg of paper',
     facts: [
       'Recycling a stack of newspaper just 3 feet high saves one tree.',
@@ -26,6 +28,7 @@ const recyclingInfo = {
       'Recycling approximately 120 grams of paper saves 1% of a tree. Recycling saves significant amounts of wood fiber and reduces the demand for logging and paper pulp production.'
   },
   metal: {
+    response: 'This is a recyclable metal!',
     carbonFootprint:
       'Varies with type. Aluminum, for instance, produces around 10 kg CO2 per kg when considering the entire lifecycle.',
     facts: [
@@ -40,6 +43,7 @@ const recyclingInfo = {
       'Recycling 500 grams of metal saves significant amounts of raw materials, including iron, aluminum, or other metals, depending on the type of metal being recycled. Recycling approximately 478 grams of steel to save 1 kg of raw materials.'
   },
   cardboard: {
+    response: 'This is a recyclable cardboard!',
     carbonFootprint: 'Approximately 3 kg CO2 per kg of cardboard',
     facts: [
       'Corrugated cardboard is typically made up of 70-100% recycled material.',
@@ -51,6 +55,7 @@ const recyclingInfo = {
       'Recycling 588 grams of cardboard saves approximately 1% of a tree, reducing the demand for new cardboard production.'
   },
   glass: {
+    response: 'This is a recyclable glass!',
     carbonFootprint: 'Around 0.33 kg CO2 per kg of recycled glass',
     facts: [
       'Glass is 100% recyclable and can be recycled endlessly without quality or purity loss.',
@@ -64,6 +69,8 @@ const recyclingInfo = {
       'Recycling approximately 667 grams of glass to save 1 kilogram of sand from being used to create new glass.'
   },
   trash: {
+    response:
+      "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle!",
     carbonFootprint:
       'Varies widely based on content, but general waste produces an average of 0.92 kg CO2e per kg of waste.',
     facts: [
@@ -77,3 +84,11 @@ const recyclingInfo = {
 // To access a category, for instance 'plastic':
 // console.log(recyclingInfo.plastic);
 export default recyclingInfo;
+
+// Sources:
+// Cardboard
+// https://ecomyths.org/wp-content/uploads/2020/11/lca-2010-aluminumassoc.pdf
+// Plastic:
+// https://onlinelibrary.wiley.com/doi/10.1111/jiec.13167
+// Metal(Aluminum):
+// https://www.aluminum.org/sites/default/files/2021-11/FactSheet2018.pdf

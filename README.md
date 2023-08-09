@@ -102,7 +102,7 @@ The frontend is built with React, while the backend utilizes Node.js and Express
   * Mentor & Project Lead: Shwetha Tinniun Raju
   * Team: Jesse Perez, Hazel Zhou, Averi Luo and Kwasi Debrah-Pinamang
   * Roles and Participation (In order of contribution)
-      * Project/Product Development: Shwetha, Jesse, Hazel, Kwasi
+      * Project/Product Management: Shwetha, Jesse, Hazel, Kwasi
       * Application Development: Jesse, Hazel
       * AI Model Development: Hazel, Jesse, Kwasi
       * Event Presentation Deck: Averi, Kwasi, Hazel, Jesse

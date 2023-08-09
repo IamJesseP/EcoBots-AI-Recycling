@@ -2,7 +2,7 @@
 
 # EcoBots: Your AI Recycling Companion
 
-A full-stack application utilizing React, Node.js, Express.js, YOLOv8 model, and the Hugging Face API. This application aims to provide users with an interface to identify the value of their individual recycling habits and impact. Users can upload a picture of their recyclable item to have it identified by our AI model as well as given summary findings of the impact they will have to the environment for recycling the item.
+An AI full-stack application utilizing React, Node.js, Express.js, YOLOv8 model, and the Hugging Face API. This application aims to provide users with an interface to identify the value of their individual recycling habits and impact. Users can upload a picture of their recyclable item to have it identified by our AI model as well as given summary findings of the impact they will have to the environment for recycling the item.
 
 The frontend is built with React, while the backend utilizes Node.js and Express.js. The application is hosted on Vercel for the frontend and Heroku for the backend.
 
@@ -33,7 +33,7 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 * Visual Studio
 * Git and GitHub
 * Hugging Face
-* Google Notebooks
+* Jupyter Notebooks
 * NPM
 
 

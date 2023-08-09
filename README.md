@@ -70,7 +70,7 @@ The frontend is built with React, while the backend utilizes Node.js and Express
   
  **Server-Client Communication** 
 
-  * Developed an understanding of how the client and server communicate, using various HTTP methods like GET, POST, DELETE, and PATCH.
+  * Developed an understanding of how the client and server communicate, using various HTTP methods.
   
   
  **Error Handling and Debugging** 

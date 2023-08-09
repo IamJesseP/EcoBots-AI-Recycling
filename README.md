@@ -32,6 +32,10 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 * Google Notebooks
 * NPM
 
+## AI Model Development
+
+
+
 ## Functionality
 
 ### EcoBots Recycling Assistant

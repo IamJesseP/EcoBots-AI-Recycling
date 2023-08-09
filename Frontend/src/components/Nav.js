@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import EcoBotsLogo from '../assets/EcoBotsLogo1NEW.png';
 import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter, useLocation } from 'react-router-dom';
@@ -65,9 +65,16 @@ export default function Nav() {
         )}
         <div className="navbar-section-2">
           {/* <button className="hover">Log In</button> */}
-          <LinkRouter to="/recycle">
-            <button className="recycle-button hover pointer">Recycle</button>
-          </LinkRouter>
+          {location.pathname === '/' && (
+            <LinkRouter to="/recycle">
+              <button className="nav-button recycle-button hover pointer">Recycle</button>
+            </LinkRouter>
+          )}
+          {location.pathname === '/recycle' && (
+            <LinkScroll to="recycle" spy={true} duration={1200} smooth={true} offset={0}>
+              <button className="nav-button recycle-button hover pointer">Recycle</button>
+            </LinkScroll>
+          )}
         </div>
       </nav>
     </>

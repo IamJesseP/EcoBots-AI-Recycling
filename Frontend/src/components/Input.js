@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import Spline from '@splinetool/react-spline';
 import { BsUpload } from 'react-icons/bs';
+import { Link as LinkScroll } from 'react-scroll';
 
-export default function Input({ setMessages }) {
+export default function Input({ setMessages, setBotResponse }) {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -18,7 +19,7 @@ export default function Input({ setMessages }) {
       alert('Please select a file.');
       return;
     }
-
+    const imageUrl = URL.createObjectURL(file);
     const formData = new FormData();
     formData.append('photo', file);
     try {
@@ -28,13 +29,37 @@ export default function Input({ setMessages }) {
       });
 
       const data = await response.json();
-      console.log(data.result);
+
       // Assuming the backend responds with an object that has a message property
       // like { message: 'Bot's response after processing the image' }
-      const botResponse = data.result.response;
-
+      const botResponse = data.result;
+      setBotResponse(botResponse);
       // Use the passed setMessages function to update the state in the parent component
-      setMessages((prevMessages) => [...prevMessages, { sender: 'bot', content: botResponse }]);
+      const botMessageContent = (
+        <>
+          {botResponse.response} Recycling this can have a significant overall impact on our
+          precious planet.
+          <LinkScroll
+            className="input-link transparent"
+            to="educational"
+            smooth={true}
+            offset={-200}
+            style={{ cursor: 'pointer' }}>
+            Click here to learn more
+          </LinkScroll>
+          <br></br>
+          <br></br>
+          <img src={imageUrl} alt="Uploaded Content" width="100" />{' '}
+        </>
+      );
+
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        {
+          sender: 'bot',
+          content: botMessageContent
+        }
+      ]);
     } catch (error) {
       console.error('There was an error uploading the file.', error);
     }

@@ -51,7 +51,9 @@ hr{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
   }
 
-
+.nav-item-2 > *{
+    margin-right: '111px';
+}
 
 .navbar-section, .navbar-section-2 {
     display: flex;

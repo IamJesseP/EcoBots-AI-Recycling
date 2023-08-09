@@ -4,6 +4,7 @@ import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter, useLocation } from 'react-router-dom';
 
 export default function Nav() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [hasScrolled, setHasScrolled] = useState(false);
   const location = useLocation();
 
@@ -18,6 +19,16 @@ export default function Nav() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const updateWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', updateWidth);
+
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+  const marginRightStyle = screenWidth < 768 ? {} : { marginRight: '118px' };
 
   return (
     <>
@@ -39,25 +50,24 @@ export default function Nav() {
             <li>
               <LinkScroll
                 to="instructional"
-                className="nav-item"
+                className="nav-item-1"
                 spy={true}
                 duration={1200}
                 smooth={true}
-                offset={-80}
+                offset={-140}
                 style={{ cursor: 'pointer' }}>
                 How It Works
               </LinkScroll>
             </li>
             <li className="none">|</li>
-            <li>
+            <li className="nav-item-2">
               <LinkScroll
                 to="about"
-                className="nav-item"
                 spy={true}
                 duration={1200}
                 smooth={true}
-                offset={0}
-                style={{ cursor: 'pointer', marginRight: '118px' }}>
+                offset={-100}
+                style={{ ...marginRightStyle, cursor: 'pointer' }}>
                 About
               </LinkScroll>
             </li>

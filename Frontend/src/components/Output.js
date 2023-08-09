@@ -22,7 +22,7 @@ export default function Output({ messages, setMessages }) {
     };
     // Send the user's message to the backend
     try {
-      const response = await fetch('http://localhost:4000/AI', {
+      const response = await fetch('https://eco-bots-backend-121-a011d85aafac.herokuapp.com/AI', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

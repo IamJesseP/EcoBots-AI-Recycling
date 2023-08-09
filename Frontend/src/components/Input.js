@@ -23,10 +23,13 @@ export default function Input({ setMessages, setBotResponse }) {
     const formData = new FormData();
     formData.append('photo', file);
     try {
-      const response = await fetch('http://localhost:4000/recycle', {
-        method: 'POST',
-        body: formData
-      });
+      const response = await fetch(
+        'https://eco-bots-backend-121-a011d85aafac.herokuapp.com/recycle',
+        {
+          method: 'POST',
+          body: formData
+        }
+      );
 
       const data = await response.json();
 

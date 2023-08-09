@@ -10,7 +10,7 @@ import recycleRouter from './routes/recycleRoutes.js';
 import openAIRouter from './routes/openAIRoutes.js';
 
 var corsOptions = {
-  origin: '*', //  frontend domain
+  origin: 'https://ecobots.vercel.app', //  frontend domain
   optionsSuccessStatus: 200,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']

@@ -78,7 +78,7 @@ export default function About() {
               href="https://github.com/IamJesseP/EcoBots-AI-Recycling"
               target="_blank"
               rel="noreferrer">
-              <DiGithubBadge />
+              <DiGithubBadge style={{ marginBottom: '-8px' }} />
             </a>
           </h1>
           <ul>

@@ -48,6 +48,7 @@ export default function Nav() {
                 How It Works
               </LinkScroll>
             </li>
+            <li className="none">|</li>
             <li>
               <LinkScroll
                 to="about"
@@ -56,11 +57,10 @@ export default function Nav() {
                 duration={1200}
                 smooth={true}
                 offset={0}
-                style={{ cursor: 'pointer' }}>
+                style={{ cursor: 'pointer', marginRight: '118px' }}>
                 About
               </LinkScroll>
             </li>
-            <li>FAQ</li>
           </ul>
         )}
         <div className="navbar-section-2">

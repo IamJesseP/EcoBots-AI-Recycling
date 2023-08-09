@@ -50,6 +50,9 @@ hr{
     background-color:#faf7f4;  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
   }
+
+
+
 .navbar-section, .navbar-section-2 {
     display: flex;
     color: #171a1f;
@@ -57,6 +60,8 @@ hr{
     list-style: none;
     font-size: 0.9rem;
 }
+
+
 
 /* .recycle-button{
     font-size: 1rem;
@@ -778,6 +783,9 @@ hr{
     flex-direction: column;
     margin-left: 20px;
     gap:12px 80px;
+}
+.none{
+    display: none;
 }
 
 }

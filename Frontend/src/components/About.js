@@ -10,8 +10,18 @@ export default function About() {
     <>
       {showMore && (
         <div className="transparent">
-          <p className="transparent">
-            Mentor: <br></br>Shwetha Tinniun Raju <br></br> Team:
+          <p>
+            Mentor:<br></br>
+            <a
+              href="https://github.com/trshwetha7"
+              className="gh-link"
+              target="_blank"
+              rel="noreferrer"
+              style={{ marginLeft: '20px' }}>
+              <DiGithubBadge />
+            </a>
+            Shwetha Tinniun Raju
+            <br></br> Team:
             <div className="about-us-team">
               <ul>
                 <li>
@@ -39,7 +49,7 @@ export default function About() {
               <ul>
                 <li>
                   <a
-                    href="https://github.com/IamJesseP"
+                    href="https://github.com/kwasi3114"
                     className="gh-link"
                     target="_blank"
                     rel="noreferrer">
@@ -49,7 +59,7 @@ export default function About() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/IamJesseP"
+                    href="https://github.com/Averi46"
                     className="gh-link"
                     target="_blank"
                     rel="noreferrer">

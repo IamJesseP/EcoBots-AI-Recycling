@@ -21,7 +21,7 @@ const limiter = rateLimit({
 });
 
 const app = express();
-
+app.set('trust proxy', 2);
 app.use(cors(corsOptions));
 app.use(helmet());
 app.use(xss());

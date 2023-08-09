@@ -16,14 +16,18 @@ export default function Output({ messages, setMessages }) {
     // First, update the state with the user's message
     setMessages((prevMessages) => [...prevMessages, { sender: 'user', content: inputValue }]);
 
+    const chatHistory = {
+      history: messages,
+      userInput: inputValue
+    };
     // Send the user's message to the backend
     try {
-      const response = await fetch('https://yourapi.com/respond', {
+      const response = await fetch('http://localhost:4000/AI', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ message: inputValue })
+        body: JSON.stringify(chatHistory)
       });
 
       const data = await response.json();

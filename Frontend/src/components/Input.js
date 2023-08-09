@@ -35,10 +35,12 @@ export default function Input({ setMessages, setBotResponse }) {
       const botResponse = data.result;
       setBotResponse(botResponse);
       // Use the passed setMessages function to update the state in the parent component
+      const botMessageContentString = `${botResponse.response} Recycling this can have a significant overall impact on our precious planet. ${botResponse.resourceConservation} Click here to learn more`;
+
       const botMessageContent = (
         <>
           {botResponse.response} Recycling this can have a significant overall impact on our
-          precious planet.{' '}
+          precious planet. {botResponse.resourceConservation}
           <LinkScroll
             className="input-link transparent"
             to="educational"
@@ -49,7 +51,7 @@ export default function Input({ setMessages, setBotResponse }) {
           </LinkScroll>
           <br></br>
           <br></br>
-          <img src={imageUrl} alt="Uploaded Content" width="100" />{' '}
+          <img src={imageUrl} alt="Uploaded Content" width="100" />
         </>
       );
 
@@ -57,7 +59,8 @@ export default function Input({ setMessages, setBotResponse }) {
         ...prevMessages,
         {
           sender: 'bot',
-          content: botMessageContent
+          content: botMessageContent,
+          contentString: botMessageContentString // Store the plain string representation
         }
       ]);
     } catch (error) {

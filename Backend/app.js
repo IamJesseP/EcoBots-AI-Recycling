@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 // Routers
 import recycleRouter from './routes/recycleRoutes.js';
+import openAIRouter from './routes/openAIRoutes.js';
 
 const app = express();
 app.use(express.json());
@@ -16,6 +17,7 @@ app.use(
 
 // Endpoints
 app.use('/recycle', recycleRouter);
+app.use('/AI', openAIRouter);
 
 const port = process.env.PORT || 4000;
 app.listen(port, () => {

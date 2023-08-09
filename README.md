@@ -2,7 +2,7 @@
 
 # EcoBots: Your AI Recycling Companion
 
-A full-stack application utilizing React, Node.js, Express.js, our own hand-crafted AI model, and the Hugging Face API. This application aims to provide users with an interface to identify the value of their individual recycling habits and impact. Users can upload a picture of their recyclable item to have it identified by our AI model as well as given summary findings of the impact they will have to the environment for recycling the item.
+A full-stack application utilizing React, Node.js, Express.js, YOLOv8 model, and the Hugging Face API. This application aims to provide users with an interface to identify the value of their individual recycling habits and impact. Users can upload a picture of their recyclable item to have it identified by our AI model as well as given summary findings of the impact they will have to the environment for recycling the item.
 
 The frontend is built with React, while the backend utilizes Node.js and Express.js. The application is hosted on Vercel for the frontend and Heroku for the backend.
 
@@ -60,6 +60,7 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 
 **AI Model Development**
   * Applied theoretical understanding of machine learning models to develop practical AI solutions during the Create-a-thon event, including data preprocessing, model selection, training, and evaluation.
+  * Trained YOLOv8 model with an accuracy of 80% on a customized dataset from Roboflow Universe.
   * Participated in a diverse team to architect and implement machine learning solutions, employing Python, TensorFlow, and Scikit-Learn to solve complex real-world problems.
   *  Navigated complex ML problems by leveraging mentor support, demonstrating problem-solving skills, and efficiently learning new concepts in an independent, remote environment.
 

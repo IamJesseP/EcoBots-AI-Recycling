@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import EcoBotsLogo from '../assets/EcoBotsLogo.png';
+import EcoBotsLogo from '../assets/EcoBotsLogo1NEW.png';
 import { Link as LinkScroll } from 'react-scroll';
 import { Link as LinkRouter, useLocation } from 'react-router-dom';
 
@@ -24,18 +24,13 @@ export default function Nav() {
       <nav id="nav" className={hasScrolled ? 'scrolled' : ''}>
         <div className="navbar-section">
           {location.pathname === '/' && (
-            <LinkScroll
-              className="logo"
-              to="hero-top"
-              smooth={true}
-              offset={-200}
-              style={{ cursor: 'pointer' }}>
-              <img src={EcoBotsLogo}></img>
+            <LinkScroll to="hero-top" smooth={true} offset={-200} style={{ cursor: 'pointer' }}>
+              <img src={EcoBotsLogo} width={220}></img>
             </LinkScroll>
           )}
           {location.pathname === '/recycle' && (
             <LinkRouter className="logo" to="/" style={{ cursor: 'pointer' }}>
-              <img src={EcoBotsLogo}></img>
+              <img src={EcoBotsLogo} width={220}></img>
             </LinkRouter>
           )}
         </div>

@@ -645,9 +645,11 @@
     display: none;
 }
 /* ----------Nav----------- */
-.logo > img{
-    height: 55px;
+.logo{
+    height: 500px;
+    width: 100px;
 }
+
 .navbar-section, .navbar-section-2 {
     gap: 8px;
     font-size: 0.75rem;

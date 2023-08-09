@@ -97,5 +97,13 @@ The frontend is built with React, while the backend utilizes Node.js and Express
  **Version Control with Git** 
    
   * Learned to manage changes in our project, especially in a group settings with merge conflicts.
-  
- **Programming Best Practices**
+
+## This project was submitted as part of the [SureStart](https://mysurestart.com/) x [MIT Futuremakers](https://raise.mit.edu/) Create-a-thon
+  * Mentor: Shwetha Tinniun Raju
+  * Team: Jesse Perez, Hazel Zhou, Averi Luo and Kwasi Debrah-Pinamang
+  * Roles and Participation (In order of contribution)
+      * Project/Product Development: Jesse, Hazel, Kwasi, Averi
+      * Application Development: Jesse, Hazel
+      * AI Model Development: Hazel, Jesse, Kwasi
+      * Event Presentation Deck: Averi, Kwasi, Hazel, Jesse
+ 

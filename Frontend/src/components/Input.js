@@ -38,7 +38,7 @@ export default function Input({ setMessages, setBotResponse }) {
       const botMessageContent = (
         <>
           {botResponse.response} Recycling this can have a significant overall impact on our
-          precious planet.
+          precious planet.{' '}
           <LinkScroll
             className="input-link transparent"
             to="educational"

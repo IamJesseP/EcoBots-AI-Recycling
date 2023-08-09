@@ -267,7 +267,7 @@
 
 /* ----------Footer---------- */
 #footer{
-
+    bottom: 0;
     height: 220px;
     width: 100%;
     background-color: #171a1f;

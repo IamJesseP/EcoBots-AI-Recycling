@@ -9,16 +9,18 @@ export default function Recycle() {
   const [botResponse, setBotResponse] = useState(null);
 
   return (
-    <div id="recycle">
-      <Nav routed={'recycle'} />
-      <div className="recycle-page">
-        <Input setMessages={setMessages} setBotResponse={setBotResponse} />
-        <Output messages={messages} setMessages={setMessages} />
-      </div>
-      <div className="educational-page">
-        <Educational botResponse={botResponse} />
+    <>
+      <div id="recycle">
+        <Nav routed={'recycle'} />
+        <div className="recycle-page">
+          <Input setMessages={setMessages} setBotResponse={setBotResponse} />
+          <Output messages={messages} setMessages={setMessages} />
+        </div>
+        <div className="educational-page">
+          <Educational botResponse={botResponse} />
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

@@ -10,7 +10,7 @@ import ResourceCon from '../assets/resourcecon.png';
 
 export default function Educational({ botResponse }) {
   if (!botResponse) {
-    return <div></div>;
+    return <div style={{ height: '700px' }}></div>;
   }
 
   return (

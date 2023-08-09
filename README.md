@@ -16,6 +16,10 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 
 #
 
+## AI Model Development
+
+
+
 ### Technologies
 * React
 * NodeJS
@@ -31,9 +35,6 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 * Hugging Face
 * Google Notebooks
 * NPM
-
-## AI Model Development
-
 
 
 ## Functionality

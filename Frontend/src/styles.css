@@ -429,9 +429,13 @@
     max-width: 90%;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    
   }
   
   .messages {
+  
+    place-self: center;
+    align-items: center;
     flex-grow: 1;
     padding: 10px;
     background-color: #e7e5e3;

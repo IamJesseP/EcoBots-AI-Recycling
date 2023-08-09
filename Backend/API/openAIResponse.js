@@ -23,7 +23,7 @@ async function openAIResponse(userInput, history) {
     })
     .filter(Boolean)
     .join('\n');
-  const prompt = `${formattedHistory}\nUser: ${userInput}\n Prompt: You are a part of a recycling application and are educating a user about an object they are attempting to recycle. Please answer and educate them accordingly. Your name in this conversation is Ecobot. Limit your response to 100 tokens.`;
+  const prompt = `${formattedHistory}\nUser: ${userInput}\n Prompt: You are a part of a recycling application and are educating a user about an object they are attempting to recycle. Please answer and educate them accordingly. Limit your response to 100 tokens.`;
 
   try {
     const result = await openai.createCompletion({

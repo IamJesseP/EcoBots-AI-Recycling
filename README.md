@@ -152,5 +152,5 @@ Once our model was trained and optimized, we deployed it using the **Hugging Fac
       * Project/Product Management: Shwetha, Jesse, Hazel, Kwasi
       * Application Development: Jesse, Hazel
       * AI Model Development: Hazel, Jesse, Kwasi
-      * Event Presentation Deck: Averi, Kwasi, Hazel, Jesse
+      * Event Presentation Deck: Averi, Jesse, Hazel, Kwasi
  

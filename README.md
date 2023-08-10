@@ -6,7 +6,7 @@ An AI full-stack application utilizing React, Node.js, Express.js, YOLOv8 model,
 
 The frontend is built with React, while the backend utilizes Node.js and Express.js. The application is hosted on Vercel for the frontend and Heroku for the backend.
 
-**A live frontend can be found [here]()**
+**A live frontend can be found [here](https://ecobots.vercel.app/)**
 
 **A live backend has been deployed to Heroku**
 

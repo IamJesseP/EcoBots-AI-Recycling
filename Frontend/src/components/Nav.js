@@ -29,7 +29,7 @@ export default function Nav() {
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
   const marginRightStyle = screenWidth < 768 ? {} : { marginRight: '118px' };
-  const logoStyle = screenWidth < 768 ? { width: '140px' } : { width: '220px' };
+  const logoStyle = screenWidth < 768 ? { width: '140px', height: '46px' } : { width: '220px' };
 
   return (
     <>

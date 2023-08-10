@@ -13,6 +13,8 @@ a:visited{
     color: #171a1f;
 }
 
+a { color: inherit; } 
+
 hr{
     width: 400px;
 }
@@ -52,7 +54,7 @@ hr{
   }
 
 .nav-item-2 > *{
-    margin-right: '111px';
+    margin-right: '118px';
 }
 
 .navbar-section, .navbar-section-2 {
@@ -714,7 +716,7 @@ hr{
 }
 .nav-button{
     width: 100px;
-    height: 80px;
+    height: 60px;
 }
 
 /* ----------HeroTop----------- */

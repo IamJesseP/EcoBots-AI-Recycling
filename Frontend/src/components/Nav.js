@@ -29,6 +29,7 @@ export default function Nav() {
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
   const marginRightStyle = screenWidth < 768 ? {} : { marginRight: '118px' };
+  const logoStyle = screenWidth < 768 ? { width: '140px' } : { width: '220px' };
 
   return (
     <>
@@ -36,12 +37,12 @@ export default function Nav() {
         <div className="navbar-section">
           {location.pathname === '/' && (
             <LinkScroll to="hero-top" smooth={true} offset={-200} style={{ cursor: 'pointer' }}>
-              <img src={EcoBotsLogo} width={220}></img>
+              <img src={EcoBotsLogo} style={{ ...logoStyle, cursor: 'pointer' }}></img>
             </LinkScroll>
           )}
           {location.pathname === '/recycle' && (
             <LinkRouter className="logo" to="/" style={{ cursor: 'pointer' }}>
-              <img src={EcoBotsLogo} width={220}></img>
+              <img src={EcoBotsLogo} style={{ ...logoStyle, cursor: 'pointer' }}></img>
             </LinkRouter>
           )}
         </div>

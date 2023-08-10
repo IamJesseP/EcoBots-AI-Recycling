@@ -67,7 +67,7 @@ export default function Nav() {
                 spy={true}
                 duration={1200}
                 smooth={true}
-                offset={-100}
+                offset={0}
                 style={{ ...marginRightStyle, cursor: 'pointer' }}>
                 About
               </LinkScroll>

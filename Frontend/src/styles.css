@@ -493,6 +493,8 @@ hr{
   
   .input-area {
     padding: 10px;
+    width: 60%;
+    height: 40px;
     display: flex;
     background-color: #e7e5e3;
   }
@@ -502,6 +504,7 @@ hr{
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
+    
   }
   
   .message-content.bot{
@@ -605,7 +608,7 @@ hr{
     }
 
     #about{
-        height:1000px;
+        height:1800px;
         margin-bottom: 100px;
     }
     .about-section{

@@ -29,6 +29,7 @@ export default function Output({ messages, setMessages }) {
         },
         body: JSON.stringify(chatHistory)
       });
+      setInputValue('');
 
       const data = await response.json();
 
@@ -40,8 +41,6 @@ export default function Output({ messages, setMessages }) {
     } catch (error) {
       console.error('There was an error sending the message to the backend.', error);
     }
-
-    // Clear the input
     setInputValue('');
   };
 

@@ -16,21 +16,31 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 </p>
 
 #
+## Project Development
+
 ### Technologies
 * React
 * NodeJS
 * ExpressJS
-* Python + Google Notebooks
+* Python + Jupyter Notebooks
 * YOLOv8 Training Model
 * Hugging Face API
-* Vercel + Heroku
+
 
 ### Development Tools
 * Visual Studio
 * Git and GitHub
-* Hugging Face
 * Jupyter Notebooks
+* Hugging Face
+* Roboflow
 * NPM
+* Vercel + Heroku
+
+### Development Phases and Links
+* [Miro Whiteboard Planning](https://miro.com/app/board/uXjVMxqjX5o=/?share_link_id=806109161243)
+* [Frontend Wireframe](https://www.figma.com/file/SeYMvbFpdk7kfnWOmHrBFh/EcoBot-Sketching?type=design&node-id=0%3A1&mode=design&t=rdgumE2BkMeB40SD-1)
+* [Frontend Prototype](https://drive.google.com/file/d/1ic8-e4ffWkdRoc9LqpmIO9ZM-W0Fd8aX/view?usp=drive_link)
+* [Demo Video](https://www.veed.io/view/3bd6139a-fbc3-489b-8b9a-05b038943096?panel=share)
 
 ## 🤖 AI Model Development
 

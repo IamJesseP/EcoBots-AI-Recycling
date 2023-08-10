@@ -79,7 +79,7 @@ For the model training process, we utilized **Jupyter Notebooks**. These interac
 
 Once our model was trained and optimized, we deployed it using the **Hugging Face** platform. Renowned for its vast collection of pre-trained models and user-friendly deployment solutions, Hugging Face allowed us to:
 
-- Share our model with the community.
+- [Share our model with the community.](https://huggingface.co/spaces/Haha777/Ecobots-predict-text/tree/main)
 - Ensure easy integration with different platforms and services.
 - Benefit from the platform's scalability and performance optimizations.
 

@@ -9,17 +9,13 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 **A live frontend can be found [here](https://ecobots.vercel.app/)**
 
 **A live backend has been deployed to Heroku**
+#
 
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGg2YzNoeTZoODdhZThjYXd2ZHN1MnFmczJwYjdvMGF1bjZ5b2llcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ehjauxt83AbfFDNxrx/giphy.gif" width="600" height="300" />
 </p>
 
 #
-
-## AI Model Development
-
-
-
 ### Technologies
 * React
 * NodeJS
@@ -35,6 +31,47 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 * Hugging Face
 * Jupyter Notebooks
 * NPM
+
+## 🤖 AI Model Development
+
+### Overview
+Our AI model is designed to leverage the power of computer vision to recognize recyclables and provide insights into the materials they're made of and their impact on the environment. We've employed state-of-the-art technologies and platforms for an efficient and transparent development workflow.
+
+###  Model Architecture: YOLOv8 by Ultralytics
+
+**YOLO (You Only Look Once)** is a real-time object detection system that's incredibly efficient and accurate. We chose the latest iteration, **YOLOv8**, for our project due to its remarkable performance and the strong support from the Ultralytics team.
+
+- **GitHub Repository:** [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+- **Features:**
+  - Efficient object detection with minimal computational cost.
+  - Advanced techniques to minimize false positives and increase accuracy.
+  - Seamless integration with PyTorch.
+
+###  Data Storage and Handling: Roboflow
+
+Our dataset, crucial to the training of our model, is stored in **Roboflow**. Roboflow offers a streamlined platform for storing, versioning, and augmenting datasets, ensuring our data remains consistent and easily accessible for training.
+
+- **Features of Using Roboflow:**
+  - Seamless dataset versioning.
+  - A plethora of augmentation techniques to enrich our data.
+  - Easy integration with popular ML frameworks.
+
+### Training Environment: Jupyter Notebooks
+
+For the model training process, we utilized **Jupyter Notebooks**. These interactive computational environments allowed us to:
+
+- Write and execute Python code interactively.
+- Visualize the training process and metrics in real-time.
+- Tweak hyperparameters on-the-fly and observe their impact.
+- Document our training process step-by-step for full transparency and reproducibility.
+
+### Model Deployment: Hugging Face
+
+Once our model was trained and optimized, we deployed it using the **Hugging Face** platform. Renowned for its vast collection of pre-trained models and user-friendly deployment solutions, Hugging Face allowed us to:
+
+- Share our model with the community.
+- Ensure easy integration with different platforms and services.
+- Benefit from the platform's scalability and performance optimizations.
 
 
 ## Functionality

@@ -149,7 +149,7 @@ Once our model was trained and optimized, we deployed it using the **Hugging Fac
    
   * Learned to manage changes in our project, especially in a group settings with merge conflicts.
     
-## Future Plans:
+## Future Plans
 * Mobile App Integration
 * Account System
     * Users can track recycling habits and total impact

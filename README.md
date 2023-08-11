@@ -107,7 +107,7 @@ Once our model was trained and optimized, we deployed it using the **Hugging Fac
 
 **AI Model Development**
   * Applied theoretical understanding of machine learning models to develop practical AI solutions during the Create-a-thon event, including data preprocessing, model selection, training, and evaluation.
-  * Trained YOLOv8 model with an accuracy of 80% on a customized dataset from Roboflow Universe.
+  * Trained ad deployed YOLOv8 model with an accuracy of 85.7% on a customized dataset from Roboflow Universe.
   * Participated in a diverse team to architect and implement machine learning solutions, employing Python, TensorFlow, and Scikit-Learn to solve complex real-world problems.
   *  Navigated complex ML problems by leveraging mentor support, demonstrating problem-solving skills, and efficiently learning new concepts in an independent, remote environment.
 

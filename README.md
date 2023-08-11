@@ -9,6 +9,10 @@ The frontend is built with React, while the backend utilizes Node.js and Express
 **A live frontend can be found [here](https://ecobots.vercel.app/)**
 
 **A live backend has been deployed to Heroku**
+
+**A Demo video of the app can be found [here](https://www.veed.io/view/3bd6139a-fbc3-489b-8b9a-05b038943096?panel=share)**
+
+**A copy of our presentation deck can be found [here](https://docs.google.com/presentation/d/1Ib7NzBV7Tey3bO-iGzwfbM_2XMVUgBhw-VDi8QtuXKM/edit?usp=sharing)**
 #
 
 <p align="center">

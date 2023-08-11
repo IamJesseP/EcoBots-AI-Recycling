@@ -148,6 +148,19 @@ Once our model was trained and optimized, we deployed it using the **Hugging Fac
  **Version Control with Git** 
    
   * Learned to manage changes in our project, especially in a group settings with merge conflicts.
+    
+## Future Plans:
+* Mobile App Integration
+* Account System
+    * Users can track recycling habits and total impact
+* Empowerment through:
+    * Recycling Location System
+    * Shareable stats (Recycle Rewind™)	
+* Education:
+    * A more detailed dashboard
+    * Vetted guides
+
+
 
 ## This project was submitted as part of the [SureStart](https://mysurestart.com/) x [MIT | Raise](https://raise.mit.edu/) Futuremakers Create-a-thon
   * Mentor & Project Lead: Shwetha Tinniun Raju

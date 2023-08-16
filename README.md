@@ -166,8 +166,8 @@ Once our model was trained and optimized, we deployed it using the **Hugging Fac
   * Mentor & Project Lead: Shwetha Tinniun Raju
   * Team: Jesse Perez, Hazel Zhou, Averi Luo and Kwasi Debrah-Pinamang
   * Roles and Participation (In order of contribution)
-      * Project/Product Management: Shwetha, Jesse, Hazel, Kwasi
+      * Project/Product Management: Jesse, Hazel, Kwasi
       * Application Development: Jesse, Hazel
-      * AI Model Development: Hazel, Jesse, Kwasi
+      * AI Model Development: Hazel, Jesse
       * Event Presentation Deck: Averi, Jesse, Hazel, Kwasi
  

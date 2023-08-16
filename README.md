@@ -2,7 +2,7 @@
 
 # EcoBots: Your AI Recycling Companion
 
-An AI full-stack application utilizing React, Node.js, Express.js, YOLOv8 model, and the Hugging Face API. This application aims to provide users with an interface to identify the value of their individual recycling habits and impact. Users can upload a picture of their recyclable item to have it identified by our AI model as well as given summary findings of the impact they will have to the environment for recycling the item.
+EcoBots is a full-stack AI solution built with React, Node.js, and Express.js, leveraging the YOLOv8 model via the Hugging Face API. Our goal is to offer users an intuitive platform to quantify the significance of their recycling practices. By uploading an image of their recyclable item, users not only get it recognized by our AI, but also receive insights into the environmental benefits of recycling that specific item.
 
 The frontend is built with React, while the backend utilizes Node.js and Express.js. The application is hosted on Vercel for the frontend and Heroku for the backend.
 

@@ -12,7 +12,7 @@ const getRecycleInfo = async (req, res) => {
   }
   try {
     const bufferImage = file.buffer;
-    const app = await client('https://haha777-ecobots-predict-text.hf.space/');
+    const app = await client('https://iamjessep-ecobots-yolov8.hf.space/');
     const result = await app.predict('/predict', [bufferImage]);
     prediction = result.data;
   } catch (error) {

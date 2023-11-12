@@ -49,6 +49,8 @@ const recyclingInfo = {
       'Corrugated cardboard is typically made up of 70-100% recycled material.',
       'Recycling 1 ton of cardboard saves 9 cubic yards of landfill space.'
     ],
+    energySavings:
+      'Recycling paper and cardboard can result in energy savings of up to 40%. Specifically, recycling one ton of cardboard saves the energy equivalent of 46 gallons of oil',
     recyclingTip:
       'Flatten cardboard boxes before recycling. Remove any non-cardboard materials, such as plastic wrap or foam.',
     resourceConservation:

@@ -72,14 +72,18 @@ const recyclingInfo = {
   },
   trash: {
     response:
-      "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle!",
+      "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle! ",
     carbonFootprint:
       'Varies widely based on content, but general waste produces an average of 0.92 kg CO2e per kg of waste.',
     facts: [
       'The average American throws away about 4.4 pounds of trash daily, contributing to over 1600 pounds a year.'
     ],
     recyclingTip:
-      'Reduce your trash output by composting organic waste, buying products with less packaging, and reusing items when possible.'
+      'Reduce your trash output by composting organic waste, buying products with less packaging, and reusing items when possible.',
+    energySavings:
+      "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle! ",
+    resourceConservation:
+      "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle! ",
   }
 };
 

@@ -11,7 +11,9 @@ const recyclingInfo = {
     energySavings:
       'Recycling saves about 30% of the energy and emissions compared to producing new plastic from raw materials.',
     resourceConservation:
-      'Recycling 500 grams of plastic saves around 12,000 BTUs of energy (equivalent to about 0.0112 gallons or 0.0425 liters of crude oil).'
+      'Recycling 500 grams of plastic saves around 12,000 BTUs of energy (equivalent to about 0.0112 gallons or 0.0425 liters of crude oil).',
+    type:
+      'plastic'
   },
   paper: {
     response: 'This is  recyclable paper!',
@@ -25,7 +27,9 @@ const recyclingInfo = {
     energySavings:
       'Recycling saves about 40% of the energy compared to producing new paper from raw materials.',
     resourceConservation:
-      'Recycling approximately 120 grams of paper saves 1% of a tree. Recycling saves significant amounts of wood fiber and reduces the demand for logging and paper pulp production.'
+      'Recycling approximately 120 grams of paper saves 1% of a tree. Recycling saves significant amounts of wood fiber and reduces the demand for logging and paper pulp production.',
+    type:
+      'paper'
   },
   metal: {
     response: 'This is a recyclable metal!',
@@ -40,7 +44,9 @@ const recyclingInfo = {
     energySavings:
       'Recycling saves about 95% of the energy compared to producing new metal from raw materials.',
     resourceConservation:
-      'Recycling 500 grams of metal saves significant amounts of raw materials, including iron, aluminum, or other metals, depending on the type of metal being recycled. Recycling approximately 478 grams of steel to save 1 kg of raw materials.'
+      'Recycling 500 grams of metal saves significant amounts of raw materials, including iron, aluminum, or other metals, depending on the type of metal being recycled. Recycling approximately 478 grams of steel to save 1 kg of raw materials.',
+    type:
+      'metal'
   },
   cardboard: {
     response: 'This is a recyclable cardboard!',
@@ -54,7 +60,9 @@ const recyclingInfo = {
     recyclingTip:
       'Flatten cardboard boxes before recycling. Remove any non-cardboard materials, such as plastic wrap or foam.',
     resourceConservation:
-      'Recycling 588 grams of cardboard saves approximately 1% of a tree, reducing the demand for new cardboard production.'
+      'Recycling 588 grams of cardboard saves approximately 1% of a tree, reducing the demand for new cardboard production.',
+    type:
+      'cardboard'
   },
   glass: {
     response: 'This is a recyclable glass!',
@@ -68,7 +76,9 @@ const recyclingInfo = {
     energySavings:
       'Recycling saves about 30% of the energy compared to producing new glass from raw materials.',
     resourceConservation:
-      'Recycling approximately 667 grams of glass to save 1 kilogram of sand from being used to create new glass.'
+      'Recycling approximately 667 grams of glass to save 1 kilogram of sand from being used to create new glass.',
+    type:
+      'glass'
   },
   trash: {
     response:
@@ -84,6 +94,8 @@ const recyclingInfo = {
       "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle! ",
     resourceConservation:
       "This doesn't look like a recyclable item! Think it is? Try taking a picture at a different angle! ",
+    type:
+      'trash'
   }
 };
 
